@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Gallery - Fractured Realities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Images/Header.png" alt="Fractured Realities Header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <span class="dropbtn">Reapers</span>
+                    <ul class="dropdown-content">
+                        <li><a href="aria.html">Aria</a></li>
+                        <li><a href="viktor.html">Viktor</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Collection</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery-section">
+        <div class="card-grid">
+            <img src="Images/Cards/Card1.png" alt="Card 1">
+            <img src="Images/Cards/Card2.png" alt="Card 2">
+            <img src="Images/Cards/Card3.png" alt="Card 3">
+            <img src="Images/Cards/Card4.png" alt="Card 4">
+            <img src="Images/Cards/Card5.png" alt="Card 5">
+            <img src="Images/Cards/Card6.png" alt="Card 6">
+            <img src="Images/Cards/Card7.png" alt="Card 7">
+            <img src="Images/Cards/Card8.png" alt="Card 8">
+            <img src="Images/Cards/Card9.png" alt="Card 9">
+            <img src="Images/Cards/Card10.png" alt="Card 10">
+            <img src="Images/Cards/Card11.png" alt="Card 11">
+            <img src="Images/Cards/Card12.png" alt="Card 12">
+            <img src="Images/Cards/Card13.png" alt="Card 13">
+            <img src="Images/Cards/Card14.png" alt="Card 14">
+            <img src="Images/Cards/Card15.png" alt="Card 15">
+        </div>
+            
+        <div class="overlay" id="overlay">
+            <img src="" alt="Enlarged Card" id="enlargedCard">
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fractured Realities. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+    console.log("Script loaded!");
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".card-grid img");
+        const overlay = document.getElementById("overlay");
+        const enlargedCard = document.getElementById("enlargedCard");
+
+        if (!cards.length || !overlay || !enlargedCard) {
+            console.error("One or more elements not found!");
+            return;
+        }
+
+        cards.forEach(card => {
+            card.addEventListener("click", () => {
+                enlargedCard.src = card.src; 
+                overlay.classList.add("active");
+                console.log("Card clicked:", card.src);
+            });
+        });
+
+        overlay.addEventListener("click", (event) => {
+            if (event.target === overlay) {
+                overlay.classList.remove("active");
+                console.log("Overlay clicked, closing.");
+            }
+        });
+    });
+</script>
+</body>
+</html>

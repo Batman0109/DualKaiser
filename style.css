@@ -180,6 +180,7 @@ header img {
     justify-content: center; 
     gap: 1rem; 
     max-width: 100%; 
+    height: 30rem;
     margin: auto;
 }
 
@@ -257,7 +258,7 @@ header img {
 .slideshow-container {
     position: relative;
     max-width: 100%;
-    height: 34rem;
+    height: 35rem;
     overflow: hidden;
     background-color: #231F20;
 }
@@ -289,6 +290,7 @@ header img {
     display: flex;
     justify-content: center;
     gap: 5rem;
+    margin-top: 1rem;
     position: absolute;
     width: 100%;
 }
@@ -303,6 +305,18 @@ header img {
 
 .card:hover {
     transform: scale(1.1);
+}
+
+.card:nth-child(1):hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); 
+}
+
+.card:nth-child(2):hover {
+    box-shadow: 0 0 20px rgba(59, 99, 174, 0.8); 
+}
+
+.card:nth-child(3):hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
 }
 
 .slider-video-container {
@@ -349,7 +363,7 @@ header img {
 
 .explore-btn {
     position: relative;
-    margin: 330px auto;
+    margin: 350px auto;
     padding: 12px 24px;
     font-family: "Beaufort";
     font-size: 1rem;
@@ -925,8 +939,11 @@ footer {
 
 .footer-links a:hover {
     color: white;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
 }
 
 /* Mobile Responsiveness */
@@ -937,8 +954,12 @@ footer {
     }
 
     header img {
+<<<<<<< HEAD
         width: 40%;
         max-width: 200px;
+=======
+        width: 30%;
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
         margin-left: 1rem;
     }
 
@@ -958,6 +979,7 @@ footer {
     }
 
     .video-container {
+<<<<<<< HEAD
         height: 25rem;
     }
 
@@ -965,6 +987,14 @@ footer {
         width: 100%;
         height: 100%;
         object-fit: cover;
+=======
+        height: 30rem;
+    }
+
+    .overlay-content {
+        font-size: 2rem;
+        padding: 0 1rem;
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
     }
 
     .details-container {
@@ -975,7 +1005,11 @@ footer {
     }
 
     .side-image {
+<<<<<<< HEAD
         max-width: 150px;
+=======
+        max-width: 200px;
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
         margin-bottom: 2rem;
     }
 
@@ -992,12 +1026,15 @@ footer {
         padding: 1rem;
     }
 
+<<<<<<< HEAD
     .media-container img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
+=======
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
     .card-container {
         flex-direction: column;
         align-items: center;
@@ -1006,11 +1043,16 @@ footer {
 
     .card {
         width: 80%;
+<<<<<<< HEAD
         max-width: 150px;
+=======
+        max-width: 200px;
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
     }
 
     .slider-video-container {
         width: 90%;
+<<<<<<< HEAD
         margin: 0 auto;
     }
 
@@ -1019,6 +1061,8 @@ footer {
         height: auto;
         max-height: 300px;
         object-fit: contain;
+=======
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
     }
 
     .explore-btn {
@@ -1039,9 +1083,14 @@ footer {
         font-size: 2.5rem;
     }
 
+<<<<<<< HEAD
     .stay-image img {
         max-width: 150px;
         height: auto;
+=======
+    .stay-image {
+        padding: 1rem;
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
     }
 
     .about-banner {
@@ -1070,6 +1119,7 @@ footer {
         width: 100%;
     }
 
+<<<<<<< HEAD
     .team-member img {
         width: 60%;
         max-width: 200px;
@@ -1101,6 +1151,25 @@ footer {
     .skill-icon {
         width: 40px;
         height: 40px;
+=======
+    .character-profile p {
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .character-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .character-card {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .skills-container {
+        width: 100%;
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
     }
 
     .gallery-section {
@@ -1108,6 +1177,7 @@ footer {
     }
 
     .card-grid {
+<<<<<<< HEAD
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 1rem;
     }
@@ -1129,6 +1199,12 @@ footer {
         height: auto;
     }
 
+=======
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
     .contact-section {
         padding: 2rem 1rem;
     }
@@ -1141,6 +1217,7 @@ footer {
         flex-direction: column;
         gap: 1rem;
     }
+<<<<<<< HEAD
 
     /* Adjust video controls for mobile */
     video::-webkit-media-controls {
@@ -1215,10 +1292,16 @@ footer {
         height: 20rem;
     }
 
+=======
+}
+
+@media screen and (max-width: 480px) {
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
     .overlay-content {
         font-size: 1.5rem;
     }
 
+<<<<<<< HEAD
     .slider-video-container {
         width: 95%;
     }
@@ -1265,6 +1348,66 @@ footer {
 
     .menu-toggle.active span:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
+=======
+    .details h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-banner h1 {
+        font-size: 2rem;
+    }
+
+    .team-section h1,
+    .gallery-section h1,
+    .contact-section h1 {
+        font-size: 2rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .character-name {
+        font-size: 2.5rem;
+    }
+}
+
+/* Add hamburger menu styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    margin-right: 1rem;
+    z-index: 1000;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
     }
 
     .navbar {
@@ -1272,6 +1415,7 @@ footer {
         top: 0;
         right: -100%;
         width: 80%;
+<<<<<<< HEAD
         max-width: 300px;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.95);
@@ -1279,6 +1423,13 @@ footer {
         transition: right 0.3s ease;
         z-index: 999;
         overflow-y: auto;
+=======
+        height: 100vh;
+        background-color: #1A1A1A;
+        padding: 80px 2rem 2rem;
+        transition: right 0.3s ease;
+        z-index: 999;
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
     }
 
     .navbar.active {
@@ -1287,12 +1438,18 @@ footer {
 
     .navbar ul {
         flex-direction: column;
+<<<<<<< HEAD
         align-items: flex-start;
         gap: 20px;
+=======
+        gap: 1rem;
+        margin: 0;
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
     }
 
     .navbar li {
         width: 100%;
+<<<<<<< HEAD
     }
 
     .navbar a {
@@ -1300,11 +1457,22 @@ footer {
         padding: 10px 0;
         display: block;
         width: 100%;
+=======
+        text-align: center;
+    }
+
+    .navbar a, .dropbtn {
+        display: block;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
     }
 
     .dropdown-content {
         position: static;
         width: 100%;
+<<<<<<< HEAD
         background-color: transparent;
         box-shadow: none;
         padding-left: 20px;
@@ -1328,6 +1496,26 @@ footer {
     }
 
     /* Add overlay when menu is active */
+=======
+        opacity: 1;
+        visibility: visible;
+        display: none;
+        background-color: #231F20;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .dropdown-content li {
+        width: 100%;
+    }
+
+    .dropdown-content a {
+        padding: 0.8rem;
+        text-align: center;
+    }
+
+    /* Add overlay when menu is open */
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
     .navbar.active::before {
         content: '';
         position: fixed;
@@ -1338,5 +1526,8 @@ footer {
         background-color: rgba(0, 0, 0, 0.5);
         z-index: -1;
     }
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> c29f37eff16230a8a09e5123b26ca5463a548242
 }

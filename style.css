@@ -180,6 +180,7 @@ header img {
     justify-content: center; 
     gap: 1rem; 
     max-width: 100%; 
+    height: 30rem;
     margin: auto;
 }
 
@@ -257,7 +258,7 @@ header img {
 .slideshow-container {
     position: relative;
     max-width: 100%;
-    height: 34rem;
+    height: 35rem;
     overflow: hidden;
     background-color: #231F20;
 }
@@ -289,6 +290,7 @@ header img {
     display: flex;
     justify-content: center;
     gap: 5rem;
+    margin-top: 1rem;
     position: absolute;
     width: 100%;
 }
@@ -303,6 +305,18 @@ header img {
 
 .card:hover {
     transform: scale(1.1);
+}
+
+.card:nth-child(1):hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); 
+}
+
+.card:nth-child(2):hover {
+    box-shadow: 0 0 20px rgba(59, 99, 174, 0.8); 
+}
+
+.card:nth-child(3):hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
 }
 
 .slider-video-container {
@@ -349,7 +363,7 @@ header img {
 
 .explore-btn {
     position: relative;
-    margin: 330px auto;
+    margin: 350px auto;
     padding: 12px 24px;
     font-family: "Beaufort";
     font-size: 1rem;
@@ -925,4 +939,302 @@ footer {
 
 .footer-links a:hover {
     color: white;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+        height: auto;
+    }
+
+    header img {
+        width: 30%;
+        margin-left: 1rem;
+    }
+
+    .navbar ul {
+        display: none; /* We'll need to implement a mobile menu */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #1A1A1A;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .navbar.active ul {
+        display: flex;
+    }
+
+    .video-container {
+        height: 30rem;
+    }
+
+    .overlay-content {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+    .details-container {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        height: auto;
+        text-align: center;
+    }
+
+    .side-image {
+        max-width: 200px;
+        margin-bottom: 2rem;
+    }
+
+    .details {
+        margin-bottom: 2rem;
+    }
+
+    .details h2 {
+        font-size: 2rem;
+    }
+
+    .media-container {
+        height: 30rem;
+        padding: 1rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .card {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    .slider-video-container {
+        width: 90%;
+    }
+
+    .explore-btn {
+        margin: 200px auto;
+    }
+
+    .stay-connected {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .stay-text {
+        padding: 1rem;
+    }
+
+    .stay-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .stay-image {
+        padding: 1rem;
+    }
+
+    .about-banner {
+        height: auto;
+        padding: 4rem 1rem;
+    }
+
+    .about-text {
+        width: 90%;
+    }
+
+    .about-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .team-section {
+        padding: 2rem 1rem;
+    }
+
+    .team-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+
+    .character-profile p {
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .character-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .character-card {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .skills-container {
+        width: 100%;
+    }
+
+    .gallery-section {
+        padding: 2rem 1rem;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .contact-section {
+        padding: 2rem 1rem;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .overlay-content {
+        font-size: 1.5rem;
+    }
+
+    .details h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-banner h1 {
+        font-size: 2rem;
+    }
+
+    .team-section h1,
+    .gallery-section h1,
+    .contact-section h1 {
+        font-size: 2rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .character-name {
+        font-size: 2.5rem;
+    }
+}
+
+/* Add hamburger menu styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    margin-right: 1rem;
+    z-index: 1000;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: #1A1A1A;
+        padding: 80px 2rem 2rem;
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar a, .dropbtn {
+        display: block;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+        background-color: #231F20;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .dropdown-content li {
+        width: 100%;
+    }
+
+    .dropdown-content a {
+        padding: 0.8rem;
+        text-align: center;
+    }
+
+    /* Add overlay when menu is open */
+    .navbar.active::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
 }

@@ -173,7 +173,7 @@ header img {
 }
 
 .details-container {
-    padding: 5rem 8rem;
+    padding: 4rem 8rem;
     background-color: #231F20;
     display: flex;
     align-items: center; 
@@ -221,7 +221,7 @@ header img {
     justify-content: center;
     align-items: center;
     width: 100vw; 
-    height: 40rem; 
+    height: 43rem; 
     position: relative;
     padding: 3rem; 
     box-sizing: border-box; 
@@ -305,18 +305,6 @@ header img {
 
 .card:hover {
     transform: scale(1.1);
-}
-
-.card:nth-child(1):hover {
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); 
-}
-
-.card:nth-child(2):hover {
-    box-shadow: 0 0 20px rgba(59, 99, 174, 0.8); 
-}
-
-.card:nth-child(3):hover {
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
 }
 
 .slider-video-container {
